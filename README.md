@@ -24,7 +24,7 @@
 
 - User need to install Docker to run the application
 - Start all containers `docker-compose up`
-- Navigate to [react localhost](http:\\localhost:3000)  --> http:\\localhost:3000
+- Navigate to [react frontend](http:\\localhost:3000)  --> running at http:\\\\localhost:3000
 - Django runs as 8000 port
 
 ## Manual way
