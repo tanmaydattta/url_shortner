@@ -16,8 +16,6 @@ services:
       dockerfile: ./frontend/Dockerfile
     container_name: shortner_frontend
     restart: always
-    volumes:
-      - ./frontend:/app
     ports:
       - 3001:3000
     networks:
