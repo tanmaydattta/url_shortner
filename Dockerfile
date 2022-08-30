@@ -12,5 +12,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./url_shortner .
 
-# runserver
+# RUN python manage.py makemigrations
+# running migrations
+RUN python manage.py migrate
+
+# make sure tests are passed
+RUN python manage.py test
+#init admin 
+# RUN python manage.py initadmin
+
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
