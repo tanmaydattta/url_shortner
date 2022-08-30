@@ -4,7 +4,6 @@ services:
   url-shortner-app:
     container_name: shortner_container
     restart: always
-    env_file: .env
     build: .
     volumes:
       - ./url_shortner:/apps
