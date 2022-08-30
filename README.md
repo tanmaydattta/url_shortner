@@ -23,8 +23,6 @@
 ## Easy way (Docker)
 
 - User need to install Docker to run the application
-- Use docker compose to spin up everything for you `docker-compose build`
-- Migration `docker-compose run url-shortner-app python manage.py migrate`
 - Start all containers `docker-compose up`
 - Navigate to [react localhost](http:\\localhost:3000)  --> http:\\localhost:3000
 - Django runs as 8000 port
