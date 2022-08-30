@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  url-shortner-app:
+    container_name: shortner_container
+    restart: always
+    env_file: .env
+    build: .
+    volumes:
+      - ./url_shortner:/apps
+    ports:
+      - 8000:8000
+    networks:
+      - internal
+  url-shortner-frontend:
+    build:
+      dockerfile: ./frontend/Dockerfile
+    container_name: shortner_frontend
+    restart: always
+    volumes:
+      - ./frontend:/app
+    ports:
+      - 3001:3000
+    networks:
+      - internal
+networks:
+  internal:
+    name: internal
+
+
+
